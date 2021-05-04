@@ -1,0 +1,206 @@
+ * {
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+ body {
+    font-family: 'Merriweather', serif;
+    color: #384047;
+    padding: 40px 0 60px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+fieldset {
+    border: none;
+}
+
+.code_review {
+    margin: -48px -15px 15px -8px;
+    padding: 20px;
+    font-size: 1em;
+    text-align: center;
+    background: #384047;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1em;
+    padding-top: 10px;
+}
+
+p {
+    text-align: center;
+    font-size: .8em;
+    color: rgb(193, 187, 187);
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid black;
+    border-left: none;
+    border-right: none;
+    box-shadow: 0px 3px 0px 0px white, 0px 4px 0px 0px black
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    border: none;
+    height: auto;
+    padding: 18px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #e8eeef;
+    outline: 0;
+    transition-duration: 1s;
+}
+
+input[class="zip"] {
+    width: 50%;
+    display: flex;
+} 
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+}
+
+textarea {
+    margin-top: 10px;
+    margin-bottom: 25px;  
+    height: 10em;
+    width: 100%; 
+    border: none;
+    border-radius: 5px;
+    background-color: #e8eeef;
+    overflow: hidden; 
+} 
+
+footer {
+    text-align: center;
+    font-size: .7em;
+    font-style: italic;
+    color: rgb(193, 187, 187);
+    border: none;
+    box-shadow: none;
+    padding-top: 20px;
+}
+
+.contact {
+    text-align: left;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-bottom: 30px; 
+}
+
+.state {
+    text-align: left;
+    color: gray;
+}
+
+.newsletter {
+    text-align: left;
+    font-size: 1.3em;
+    font-weight: bold;
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    border-top: 2px solid black;
+}
+
+.select_newsletter {
+    font-size: 1em;
+    text-align: left;
+    color: #384047;
+    border: none;
+    box-shadow: none;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.light {
+    font-size: .8em;
+    display: inline;
+    padding-bottom: 10px;
+}
+
+
+.btn {
+    font-family: 'Merriweather', serif;
+    width: 100%; 
+    border: none;
+    border-radius: 5px;
+    padding: 25px; 
+    font-size: 1.2em;
+    color: white;
+    background-color: rgb(116, 208, 208);
+    cursor: pointer;
+    transition-duration: 1s;
+}
+
+input:focus {
+    background-color:rgb(214, 231, 242);
+}
+
+.btn:hover {
+    background-color: rgb(170, 233, 233);
+    color: rgb(245, 145, 162);
+}
+
+::-webkit-input-placeholder {
+    font-style: italic;
+    text-align: right;
+    font-size: .7em;
+}
+
+textarea::placeholder {
+    text-align: left;
+    font-size: 1em;
+}
+
+.space {
+    padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+ 
+    form {
+        margin: 30px 50px 50px 30px;
+    } 
+ 
+    p {
+        margin-left: 40px;
+        margin-right: 40px;
+    } 
+
+    .row .zip {
+        width: 25%;
+        display: inline-block;
+    } 
+
+    .row {
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+
+    .row label {
+        width: 30%;
+        align-self: center;
+    }
+
+    .row input,
+    select {
+        width: 70%;
+    }
+}
